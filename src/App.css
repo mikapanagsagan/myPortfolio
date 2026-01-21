@@ -1,0 +1,72 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  /* Light background */
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Main content container */
+.page {
+  position: relative;      /* IMPORTANT: above wave */
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  min-height: 100vh;
+}
+
+/* Headline */
+.page h1 {
+  font-size: clamp(40px, 6vw, 56px);
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #111827;
+}
+
+.page p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0 0 32px;
+  max-width: 520px;
+}
+
+/* Navigation buttons */
+.nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.nav button {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav button:hover {
+  background: #f3f4f6;
+  border-color: #2563eb;
+}
+/* Focus outline (accessibility) */
+.nav button:focus-visible {
+  outline: 2px solid rgba(124, 58, 237, 0.8);
+  outline-offset: 2px;
+}
